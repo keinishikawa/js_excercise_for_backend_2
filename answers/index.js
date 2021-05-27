@@ -1,12 +1,12 @@
-const axios = require('axios');
-const API_URL = 'https://opentdb.com/api.php?amount=10';
+const axios = require("axios");
+const API_URL = "https://opentdb.com/api.php?amount=10";
 
-(async() => {
+(async () => {
   try {
     const response = await axios.get(API_URL);
     const results = response.data.results;
-    console.log('クイズデータ : ', results);
+    console.log("クイズデータ : ", results);
   } catch (error) {
-    console.log('エラー : ', error);
+    console.log("エラー : ", error);
   }
 })();
